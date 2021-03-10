@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>KLE Tech Weekly Water Consumption Prediction </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="icon" href="https://i.stack.imgur.com/ARrIv.png"
+type="image/x-icon">  
+</head>
+
+<body>
+<body background="https://i.imgur.com/aTA7akR.jpg" style="background-size: cover; background-repeat: no-repeat;">
+</body>
+<img src='https://i.stack.imgur.com/l0n5E.jpg' style='position:absolute; top:0; right:0;' width='235px' height='75px' alt='' />
+ <div class="login">
+<font color="white">
+<h1><p style="text-align:center;">Welcome to Weekly Water Usage Prediction</p>
+</h1>
+</font>
+	
+     <!-- Main Input For Receiving Query to our ML -->
+	<font style="font-family:verdana">
+	<!--TD align="Left"><p style="font-size:20px">Main Building</p></TD-->
+	</font>
+    <form action="{{ url_for('predict')}}"method="post">
+	<p style="text-align:left;">Mechanical Building</p>
+    	<TD align="center"><input type="text" name="Week" placeholder="week" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></div>
+	</TD>
+
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+ <div>
+  <a href="/flask_app_3">EC</a>
+  <a href="/flask_app_1">Mb</a>
+  <a href="/flask_app_4">Architecture</a>
+      </div>
+
+</body>
+</html>

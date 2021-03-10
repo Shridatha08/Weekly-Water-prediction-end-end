@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Architecture Building</title>
+		<link rel='stylesheet' href='https://download937.mediafire.com/9kasvkrgqqog/df0ssx0j5q66vac/style.css' />
+		<link rel='stylesheet' href='https://download1493.mediafire.com/iwtja5yeerhg/3nic0a64z1dx0o4/bootstrap.min.css' />
+		<link rel='stylesheet' href='https://download1510.mediafire.com/lbrl1zqncdtg/hpr9b0d4jc9tt81/font-awesome.min.css' />
+
+		<!-- Load c3.css -->
+		<link href="https://download1646.mediafire.com/geq73by4vedg/f6xe2fznmpnmi7y/c3.css" rel="stylesheet" type="text/css">
+
+		<!-- Load d3.js and c3.js -->
+		<script src="https://download1523.mediafire.com/qy5gdzg6g7fg/lbptqndy7rx2awu/d3.v3.min.js" charset="utf-8"></script>
+		<script src="https://download1509.mediafire.com/ym1stmb00tag/o7t6ukuzcwjggo7/c3.min.js"></script>
+
+  	</head>
+  	<body>
+  	
+	<br><br><br>
+    	
+	<div class="container">
+    		<div id="chart"></div>
+    	</div>
+
+		<body>
+			<h1 style="text-align:center;margin: 30px;">Architecture Building</h1>
+			<form action="{{ url_for('predict')}}"method="post" style="text-align:center; margin: 20px;">
+					<input type="text" name="Week" placeholder="Week" required="required" />
+					<button type="submit" class="btn btn-primary btn-large">Predict</button>
+			</form>
+			{{ prediction_text }}
+			<div class="container">
+				<div id="chartContainer"></div>
+			</div>
+			<script src="https://download1644.mediafire.com/1yxj2u10sdmg/9bpttf475v7l3n0/arch.js"></script>
+		</body>
+		
+		</html>
